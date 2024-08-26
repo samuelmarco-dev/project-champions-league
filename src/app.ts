@@ -1,10 +1,10 @@
 import express, { json } from 'express';
 import cors from 'cors';
-import router from './routes';
+import routes from './routes';
 
 const app = express();
 app.use(cors({ origin: 'localhost' }));
 app.use(json());
-app.use(router);
+app.use(routes);
 
 export default app;

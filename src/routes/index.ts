@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import PlayerRouter from './PlayerRoutes.js';
-import ClubRouter from './ClubRoutes.js';
+import PlayerRoutes from './PlayerRoutes.js';
+import ClubRoutes from './ClubRoutes.js';
 
-const router = Router();
-router.use('/api/players', PlayerRouter);
-router.use('/api/clubs', ClubRouter);
+const routes = Router();
+routes.use('/api/players', PlayerRoutes);
+routes.use('/api/clubs', ClubRoutes);
 
-export default router;
+export default routes;

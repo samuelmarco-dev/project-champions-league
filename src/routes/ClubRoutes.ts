@@ -1,5 +1,5 @@
 import { Router } from 'express';
 
-const ClubRouter = Router();
+const ClubRoutes = Router();
 
-export default ClubRouter;
+export default ClubRoutes;
