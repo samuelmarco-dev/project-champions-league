@@ -69,7 +69,6 @@ npm run fix
     "prepare": "husky install",
     "start:dev": "tsx --env-file=.env.dev src/index.ts",
     "start:watch": "tsx watch --env-file=.env.dev src/index.ts",
-    "start:dist": "npm run dist && node dist/src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dist": "npm run dist && node dist/src/index.js"
 }
 ```

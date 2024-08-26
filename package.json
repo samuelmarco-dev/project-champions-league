@@ -2,9 +2,15 @@
   "name": "project-champions-league",
   "version": "1.0.0",
   "description": "API Champions League with Framework Express",
-  "main": "index.js",
+  "type": "module",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dist": "tsup src",
+    "fix": "prettier . --write && eslint --fix .",
+    "prepare": "husky install",
+    "start:dev": "tsx --env-file=.env.dev src/server.ts",
+    "start:watch": "tsx watch --env-file=.env.dev src/server.ts",
+    "start:dist": "npm run dist && node dist/src/server.js"
   },
   "repository": {
     "type": "git",
