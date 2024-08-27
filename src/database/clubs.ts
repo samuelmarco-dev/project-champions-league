@@ -1,4 +1,4 @@
-import ClubModel from '../models/Clubs.js';
+import ClubModel from '../models/Club.js';
 
 const databaseClubs: ClubModel[] = [
     {
