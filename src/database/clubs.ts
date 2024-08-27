@@ -1,6 +1,6 @@
-import ClubsModel from '../models/Clubs.js';
+import ClubModel from '../models/Clubs.js';
 
-const databaseClubs: ClubsModel[] = [
+const databaseClubs: ClubModel[] = [
     {
         id: 1,
         name: 'Manchester City',
